@@ -1,12 +1,11 @@
-package cinema;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Cinema {
+public class CinemaManager {
     private static Scanner m_scanner=new Scanner(System.in);
+
     public static void main(String[] args) {
-        // Write your code here
         int rows;
         int seatsPerRow;
         //Define Room params
@@ -32,11 +31,11 @@ public class Cinema {
                 break;
             case 2: //Buy a ticket
                 System.out.println("Enter a row number:");
-                int rowIndex = m_scanner.nextInt();
+                int rowIndex = m_scanner.nextInt() - 1; //Index starts from 1 for the user
                 System.out.println("Enter a seat number in that row:");
-                int colIndex = m_scanner.nextInt();
+                int colIndex = m_scanner.nextInt() - 1; //Index starts from 1 for the user
                 //Ticket Price
-                int ticketPrice = cinRoom.getTicketPrice(rowIndex, colIndex);
+                int ticketPrice = cinRoom.getTicketPrice(rowIndex);
                 if(cinRoom.bookSeat(rowIndex, colIndex)) break;
                 else {handleInput(2, cinRoom); break;}
             case 3: //statistics
@@ -44,6 +43,9 @@ public class Cinema {
                 break;
             case 0: //exit
                 return false;
+            default:
+                System.out.println("This option does not exist! Please try again...");
+                break;
         }
         return true;
     }
@@ -54,38 +56,5 @@ public class Cinema {
         System.out.println("2. Buy a ticket");
         System.out.println("3. Statistics");
         System.out.println("0. Exit");
-    }
-
-    private void task1() {
-        int rows = 7;
-        int cols = 8;
-
-        System.out.println("Cinema:");
-        System.out.print("  ");
-        int[] header = {1,2,3,4,5,6,7,8};
-        printRow(header);
-        for(int i = 0; i< rows; i++) {
-            System.out.printf("%d ", i+1);
-            String str = new String("SSSSSSSS");
-            printRow(str);
-        }
-    }
-
-    private static void printRow(String s) {
-        int i = 0;
-        while(i<s.length()){
-            System.out.printf("%c ", s.charAt(i));
-            i++;
-        }
-        System.out.printf("%n");
-    }
-
-    private static void printRow(int[] arr) {
-        int i = 0;
-        while(i<arr.length){
-            System.out.printf("%d ", arr[i]);
-            i++;
-        }
-        System.out.printf("%n");
     }
 }
