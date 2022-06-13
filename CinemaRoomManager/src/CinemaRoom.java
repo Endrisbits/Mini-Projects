@@ -18,6 +18,7 @@ class CinemaRoom {
         System.out.println();
     }
 
+
     public int getTicketPrice(int i) {
         if(isSmallRoom) return m_smallRoomPrice;
         else { //Big room. Now price depends on row position
@@ -71,7 +72,7 @@ class CinemaRoom {
         }
     }
 
-    private void printHeader ( int rows){
+    private void printHeader (int rows) {
         System.out.printf("%nCinema:%n");
         System.out.print("  ");
         for (int i = 1; i <= m_seatsPerRow; i++) {

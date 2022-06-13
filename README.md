@@ -6,8 +6,8 @@ terms of interaction with the user with no features of a GUI.
 
 ##Cinema Room Manager
 This is an application that helps with managing a cinema room. The user gives the rows and columns as input. Then a simple loop offers the following functions: 
-- Print the room's layout
-- Book a seat by buying a ticket
+- Printing the room's layout
+- Booking a seat by buying a ticket
 - Some statistics regarding booked seats and income.
 
 A room with less than 60 seats total is considered small and each ticket has a price of $10. If more than 60 seats are available, the seats in the front half cost $10, while the seats in the back half cost $8.
