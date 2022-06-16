@@ -4,7 +4,7 @@ These projects were mainly built around a specific task, usually within a day of
 refactoring the code and making it easy to expand for later. For the same reasons most of them are console based in 
 terms of interaction with the user with no features of a GUI.
 
-##Cinema Room Manager
+## Cinema Room Manager
 This is an application that helps with managing a cinema room. The user gives the rows and columns as input. Then a simple loop offers the following functions: 
 - Printing the room's layout
 - Booking a seat by buying a ticket
@@ -17,6 +17,6 @@ The statistics show the following:
 - Current income
 - The total income that shows how much money the owner will get if all the tickets are sold.
 
-##Simple Tic-Tac-Toe
+## Simple Tic-Tac-Toe
 
-##Coffee Machine
+## Coffee Machine
