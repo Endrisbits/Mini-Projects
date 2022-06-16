@@ -12,22 +12,12 @@ public class CoffeeMachine {
     private static int M_refillCounter=0;
     private static boolean M_quit=false;
 
-    enum States{READY, ORDERING, SELECTING, REFILLING }
+    enum States{READY, ORDERING, REFILLING }
     private static States M_currentState = States.READY;
 
     public static void main(String[] args) {
         handleCommand("reset");
         while(!M_quit) {handleCommand(M_scanner.nextLine());}
-    }
-
-    private static void start(){
-        System.out.println("Starting to make a coffee...");
-        System.out.println("Grinding coffee beans...");
-        System.out.println("Boiling water...");
-        System.out.println("Mixing boiled water with crushed coffee beans...");
-        System.out.println("Pouring coffee into the cup...");
-        System.out.println("Pouring some milk into the cup...");
-        System.out.println("Coffee is ready!");
     }
 
     private static void printCurrentInventory(){
