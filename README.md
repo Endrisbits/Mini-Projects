@@ -20,7 +20,7 @@ The statistics show the following:
 ## Simple Tic-Tac-Toe
 This is a standard version of the TicTacToe game on console. Two players take turns (PlayerX and PlayerO) filling the 3x3 field until one achieves to fill a row, a column or a diagonal with their symbol and wins the game or until the game ends in a draw.
 
-A perfectly played game should always result in a draw. In order to fill a field the Player must give a position coordinate (x,y) where 1 <= x,y <= 3 on their turn. If the user inputs is malformed, an error message is displayed, asking for a new input. The focus of this project is mostly on correctly implementing the logic of the game and the logical checks. 
+A perfectly played game should always result in a draw. In order to fill a field the Player must give a position coordinate (x,y) where 1<=x,y<=3 on their turn. If the user inputs is malformed, an error message is displayed, asking for a new input. The focus of this project is mostly on correctly implementing the logic of the game and the logical checks. 
 
 ## Coffee Machine
 This is an application that controls a virtual coffee machine, which can make coffee by mixing different ratios of water, milk and coffee beans depending on the type of coffee. This is achieved by using a finite state machine model for: 
